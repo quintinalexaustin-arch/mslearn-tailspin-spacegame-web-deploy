@@ -90,6 +90,6 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
             inputs:
-              azureSubscription: 'ServiceConnection-AD'
+              azureSubscription: 'Visual Studio Enterprise Subscription (0b695db3-d4d3-4f19-ab80-c30895b32bf9)'
               appName: '$(WebAppName)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
