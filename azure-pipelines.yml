@@ -77,7 +77,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      vmImage: 'ubuntu-22.04'
+      name: 'Linux-AD'
     environment: dev
     variables:
     - group: Release
